@@ -12,8 +12,8 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: '$(Build.SourcesDirectory)'
-    gradleWrapperFile: '$(Build.SourcesDirectory)/gradlew'
+   # workingDirectory: '$(Build.SourcesDirectory)'
+    gradleWrapperFile: 'service-fabric-java-getting-started/gradlew'
     gradleOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
