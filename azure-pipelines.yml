@@ -12,8 +12,8 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: '$(system.defaultWorkingDirectory)/IdentityService'
-    gradleWrapperFile: '$(system.defaultWorkingDirectory)/IdentityService/gradlew'
+    workingDirectory: '$(system.defaultWorkingDirectory)'
+    gradleWrapperFile: '$(system.defaultWorkingDirectory)/gradlew'
     gradleOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
