@@ -23,3 +23,8 @@ steps:
     tasks: 'build'
 
 
+- script: |
+    cd examples/java
+    chmod +x ./gradlew
+    ./gradlew build
+  displayName: 'Test Java Build'
